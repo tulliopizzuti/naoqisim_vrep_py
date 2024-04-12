@@ -1,0 +1,1 @@
+"%CHOREGRAPHE_DIR%\bin\naoqi-bin.exe"
