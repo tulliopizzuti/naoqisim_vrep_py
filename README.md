@@ -42,8 +42,9 @@ python single_nao_control.py
 After the connection on Choregraphe, you can see in video monitor the simulated environment loaded in CoppeliaSim.
 In this version movement and vision utility works.
 
-##Future work
-1. Proximity sensor integration
+## Future work
+1. Proximity Sensors integration
+2. Fix 2.8.8 movement library error. Proximity Sensors (probably) don't make the robot walk decently in the simulator with this version of SDK.
 
 ## Thanks
 This project is an extension of the repo: https://github.com/PierreJac/Project-NAO-Control/tree/master
