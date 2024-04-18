@@ -6,7 +6,7 @@ Specific versions of Choregraphe and the SDK were chosen because they do not cre
 ## Requirements
 - Choregraphe 2.5.10: https://www.aldebaran.com/en/support/pepper-naoqi-2-9/choregraphe-setup-2510-windows
 - CoppeliaSim V4.6.0 rev18: https://www.coppeliarobotics.com/
-- NAOqi SDK 2.1.4: https://www.aldebaran.com/en/support/nao-6/downloads-softwares/former-versions?os=45&category=39
+- NAOqi SDK 2.1.4: https://community-static.aldebaran.com/resources/2.1.4.13/sdk-c%2B%2B/naoqi-sdk-2.1.4.13-win32-vs2010.zip
 - Anaconda Environment: https://www.anaconda.com/download
 
 ## Installation Step
