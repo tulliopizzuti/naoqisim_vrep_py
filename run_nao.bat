@@ -1,1 +1,1 @@
-"%CHOREGRAPHE_DIR%\bin\naoqi-bin.exe"
+"%NAOQISDK%\bin\naoqi-bin.exe"
