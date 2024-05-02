@@ -18,10 +18,10 @@ class VideoController:
 
     def run(self):
         res1,visionSensorHandle=self.vrep.simxGetObjectHandle(self.clientID,self.visionSensorName,self.vrep.simx_opmode_oneshot_wait)
-        res2,resolution,image=self.vrep.simxGetVisionSensorImage(self.clientID,visionSensorHandle,0,self.vrep.simx_opmode_streaming)
+        #res2,resolution,image=self.vrep.simxGetVisionSensorImage(self.clientID,visionSensorHandle,0,self.vrep.simx_opmode_streaming)
         time.sleep(0.5)
-        res2,resolution,image=self.vrep.simxGetVisionSensorImage(self.clientID,visionSensorHandle,0,self.vrep.simx_opmode_buffer)
-        img = I.new("RGB", (resolution[0], resolution[1]))
+        #res2,resolution,image=self.vrep.simxGetVisionSensorImage(self.clientID,visionSensorHandle,0,self.vrep.simx_opmode_buffer)
+        #img = I.new("RGB", (resolution[0], resolution[1]))
         while(self.vrep.simxGetConnectionId(self.clientID)!=-1):
             res,resolution,image = self.vrep.simxGetVisionSensorImage(self.clientID,visionSensorHandle,0,self.vrep.simx_opmode_buffer)
             image_byte_array = array.array('b',image)
