@@ -22,6 +22,7 @@ conda activate nao
 conda config --env --set subdir win-32
 conda install python=2.7
 conda install pillow
+pip install argparse
 ```
 
 ## Execute Project
@@ -30,21 +31,18 @@ After downloading this repo, follow this step to start the simulated env.
 1. Go to the main folder
 2. Execute "run_nao.bat"
 3. Execute "run_choregraphe.bat"
-4. Run CoppeliaSim and open the scene in scene\NAO.ttt
+4. Run CoppeliaSim and open the scene in scene\NAO.ttt or scene\NAO_sensors.ttt
 5. Run the simulation on CoppeliaSim
 6. Open a prompt in script folder and run
 ```
 conda activate nao
-python single_nao_control.py
+python nao.py
 ```
 7. Port number is 9559 by default (if you want change the port can run on a prompt the command %CHOREGRAPHE_DIR%\bin\naoqi-bin.exe -p CUSTOM_PORT)
+8. To print help add -h/--help argument
 
 After the connection on Choregraphe, you can see in video monitor the simulated environment loaded in CoppeliaSim.
 In this version movement and vision utility works.
-
-## Future work
-1. Proximity Sensors integration
-2. Fix 2.8.8 movement library error. Proximity Sensors (probably) don't make the robot walk decently in the simulator with this version of SDK.
 
 ## Thanks
 This project is an extension of the repo: https://github.com/PierreJac/Project-NAO-Control/tree/master
