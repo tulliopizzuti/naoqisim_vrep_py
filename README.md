@@ -22,6 +22,7 @@ conda activate nao
 conda config --env --set subdir win-32
 conda install python=2.7
 conda install pillow
+pip install argparse
 ```
 
 ## Execute Project
@@ -35,7 +36,7 @@ After downloading this repo, follow this step to start the simulated env.
 6. Open a prompt in script folder and run
 ```
 conda activate nao
-python single_nao_control.py
+python nao.py
 ```
 7. Port number is 9559 by default (if you want change the port can run on a prompt the command %CHOREGRAPHE_DIR%\bin\naoqi-bin.exe -p CUSTOM_PORT)
 
